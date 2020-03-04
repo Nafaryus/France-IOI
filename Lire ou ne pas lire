@@ -1,0 +1,10 @@
+nbLivres=int(input())
+Max=0
+lenght=0
+for i in range(nbLivres):
+   titre=input()
+   length=len(titre)
+   if length>Max:
+      Max=length
+      print(titre)
+      
