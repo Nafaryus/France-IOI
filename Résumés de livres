@@ -1,0 +1,7 @@
+nbLivres=int(input())
+longueurMinimale=int(input())
+for i in range(0,nbLivres*2,2):
+   titre=input()
+   resume=input()
+   if len(resume)<longueurMinimale:
+      print(titre)
