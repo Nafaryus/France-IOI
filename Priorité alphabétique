@@ -1,0 +1,6 @@
+nom1=input()
+nom2=input()
+if nom1>nom2:
+   print(nom2)
+elif nom1<nom2:
+   print(nom1)   
