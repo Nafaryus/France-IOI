@@ -1,0 +1,17 @@
+nbCoureurs=int(input())
+choix=[0]*nbCoureurs
+
+#initialisation des choix individuels
+for i in range(nbCoureurs):
+   choix[i]=int(input())
+choix.sort()
+
+#composition des équipes
+j=nbCoureurs
+n=nbCoureurs//2
+for i in range(n):
+   run1=choix[i]
+   run2=choix[j-1]
+   j=j-1
+   print("{} {}".format(run1,run2))
+   
