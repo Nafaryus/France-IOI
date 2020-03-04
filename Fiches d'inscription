@@ -1,0 +1,5 @@
+nbPersonnes=int(input())
+for i in range(nbPersonnes):
+   identite=input().split(" ")
+   print(identite[1], identite[0])
+   
