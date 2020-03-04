@@ -1,0 +1,26 @@
+nbPositions=int(input())
+nbChangements=int(input())
+planInit=[0]*nbPositions
+mouvt=[0]*nbChangements*2
+
+#initialisation plan de table initial : chaque occurence montre l'identifiant de la personne assise à la place 'i'
+for i in range(nbPositions):
+   planInit[i]=int(input())
+
+#initialisation des changements au plan de table initial, par paire : 0+1, 2+3, 4+5 etc; 9 chgts => 18 datas dans le tableau mouvt[]
+for i in range(nbChangements*2):
+   mouvt[i]=int(input())
+   
+#calcul du plan de table final
+for i in range(0,nbChangements*2,2):
+   #lecture de la nième permutation
+   pos1=mouvt[i]
+   pos2=mouvt[i+1]
+   shift1=planInit[pos1]
+   shift2=planInit[pos2]
+   planInit[pos1]=shift2
+   planInit[pos2]=shift1
+
+for i in range(nbPositions):
+   print(planInit[i])
+   
