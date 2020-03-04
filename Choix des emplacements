@@ -1,0 +1,10 @@
+nbEmplacements=int(input())
+emplMarchand=[0]*nbEmplacements
+
+#initialisation d'un tableau en affectant les emplacements au numéro du marchand qui le possède
+for i in range (nbEmplacements):
+   emplMarchand[int(input())]=i
+   
+#affichage des emplacements dans l'ordre croissant des emplacements
+for i in range (nbEmplacements):
+   print(emplMarchand[i])
