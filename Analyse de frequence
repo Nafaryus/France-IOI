@@ -1,0 +1,11 @@
+nbLignes, nbMots = map(int, input().split(" "))
+longueur=[0]*101
+
+for iLigne in range(nbLignes):
+   mots=input().split(" ")
+   for n in range(nbMots):
+      longueur[len(mots[n])]=longueur[len(mots[n])]+1
+
+for iLong in range(101):
+   if longueur[iLong]>0:
+      print(iLong," : ",longueur[iLong])
