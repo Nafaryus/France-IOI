@@ -1,0 +1,3 @@
+titre=input()
+for iPos in range(len(titre)):
+   print(titre[iPos])
