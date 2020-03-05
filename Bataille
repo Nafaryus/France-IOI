@@ -1,0 +1,33 @@
+jeu1=input()
+jeu2=input()
+length1=len(jeu1) #nombre de cartes dans le jeu du joueur 1
+length2=len(jeu2) #nmobre de cartes dans le jeu du joueur 2
+nbCoups=0
+nbEgalites=0
+
+#Bloc1 : tant qu'il reste des cartes dans les 2 jeux (sinon le jeu s'arrête et on traite dans le second bloc)
+while length1>0 and length2>0:
+   if jeu1[nbCoups]==jeu2[nbCoups]:
+      length1=length1-1
+      length2=length2-1
+      nbEgalites=nbEgalites+1
+      nbCoups=nbCoups+1
+   elif jeu1[nbCoups]>jeu2[nbCoups]:
+      print("2")
+      print(nbEgalites)
+      break
+   else:
+      print("1")
+      print(nbEgalites)
+      break
+      
+#Bloc2 : si l'un des 2 joueurs n'a plus de carte, ou que les 2 n'ont plus de cartes en meme temps
+if length1==0 and length2==0:
+    print("=")
+    print(nbEgalites)
+elif length1==0:
+    print("2")
+    print(nbEgalites)
+elif length2==0:
+    print("1")
+    print(nbEgalites)
