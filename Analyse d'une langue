@@ -1,0 +1,10 @@
+letter=input()
+nbLignes=int(input())
+count=0
+for iLigne in range(nbLignes):
+   ligne=input()
+   length=len(ligne)
+   for iCaractere in range(length):
+        if ligne[iCaractere]==letter:
+            count=count+1
+print(count)  
