@@ -1,0 +1,10 @@
+ligne=input()
+length=len(ligne)
+caracteres=list(ligne)
+
+for iCaractere in range(length-1):
+   if caracteres[iCaractere]==" ":
+      caracteres[iCaractere]="_"
+
+texte="".join(caracteres)
+print(texte) 
