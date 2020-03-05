@@ -1,0 +1,12 @@
+livre=input()
+auteur=input()
+voyelles=["A","E","I","O","U","Y"," "]
+
+for iCaractere in range(len(livre)):
+    if livre[iCaractere] not in voyelles:
+        print(livre[iCaractere], end="")
+
+print()
+for iCaractere in range(len(auteur)):
+    if auteur[iCaractere] not in voyelles:
+        print(auteur[iCaractere], end="")
