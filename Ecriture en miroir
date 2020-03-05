@@ -1,0 +1,13 @@
+nbLignes=int(input())
+ligne=[0]*nbLignes
+
+for i in range(nbLignes):
+    ligne[i]=input()
+
+for iLigne in range(nbLignes):
+    length=len(ligne[iLigne])
+    compo=ligne[iLigne]
+    for iCaractere in range(length,0,-1):
+        print(compo[iCaractere-1],end="")
+    print()
+   
