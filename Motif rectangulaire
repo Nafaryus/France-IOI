@@ -1,0 +1,11 @@
+def RemplirMotif(lignes, colonnes, lettre):
+   for iLig in range(lignes):
+      for iCol in range(colonnes):
+         print(lettre,end="")
+      print()
+      
+
+lignes=int(input())
+colonnes=int(input())
+lettre=input()
+RemplirMotif(lignes, colonnes, lettre)
