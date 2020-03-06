@@ -1,0 +1,9 @@
+def ligneCaractere(longueur,caractere):
+   for i in range(longueur):
+      print(caractere, end="")
+   print()
+
+longueur=int(input())
+ligneCaractere(longueur, "X")
+ligneCaractere(longueur, "#")
+ligneCaractere(longueur,"i")
