@@ -1,0 +1,13 @@
+#Définition de la fonction
+def SuiteTermes(val1):
+   if val1 % 2 ==0:
+      return val1//2
+   else:
+      return val1*3 + 1
+      
+#Initialisation, calcul et afficahge de la suite
+val1=int(input())
+nombre=val1
+while nombre!=1:
+   nombre=SuiteTermes(nombre)
+   print(nombre, end="")
