@@ -1,0 +1,18 @@
+convDist=0.3048
+convPoids=0.002205
+
+nbMesures=int(input())
+for iMes in range(nbMesures):
+   donnees=input().split(" ")
+   mesure=float(donnees[0])
+   unite=donnees[1]
+   
+   if unite=="m":
+      resultat=mesure/convDist
+      print(resultat," p")
+   elif unite=="g":
+      resultat=mesure*convPoids
+      print(resultat, " l")
+   else:
+      resultat=32+1.8*mesure
+      print(resultat, " f")
